@@ -15,7 +15,6 @@ export default function App() {
   const calculateBMI = () => {
     console.log(unit)
     if (!unit) {
-      // Alert user if they haven't selected a unit
       Alert.alert('Unit not selected', 'Please select a measurement unit before calculating BMI.');
       return;
     }
@@ -38,7 +37,6 @@ export default function App() {
       bmiValue = w / (h * h);
       setBmi(bmiValue.toFixed(1));
     } else {
-      // Alert user if inputs are invalid
       Alert.alert('Invalid Input', 'Please enter valid height and weight values.');
     }
   };
