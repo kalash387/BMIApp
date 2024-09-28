@@ -13,7 +13,6 @@ export default function App() {
 
   // Function to calculate BMI based on user inputs
   const calculateBMI = () => {
-    console.log(unit)
     if (!unit) {
       Alert.alert('Unit not selected', 'Please select a measurement unit before calculating BMI.');
       return;
